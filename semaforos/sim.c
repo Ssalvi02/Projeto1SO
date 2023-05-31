@@ -195,7 +195,8 @@ void *aluno(void *arg)
         // se algum monitor quer sair e o aluno que saiu
         // era o ultimo de um grupo, o monitor pode sair.
         // tambem nao pode ter ninguem esperando pelo atendimento do monitor
-        if (num_grupos < num_monitores)
+        if (num_grupos < num_monitores) // ERRADO não posso verificar num_monitores sem bloquear antes
+                                        // mas se eu bloquear da deadlock
             post(&sem_monitor_livre);
     unlock(&mutex_alunos);
     
