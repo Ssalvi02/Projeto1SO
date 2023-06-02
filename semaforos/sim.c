@@ -177,6 +177,7 @@ void *aluno(void *arg)
     lock(&mutex_alunos);
         num_alunos++;
         num_alunos_entraram++;
+        num_alunos_esperando--;
         num_grupos = ceil((float)num_alunos / TAM_GRUPO);
         printf("        Aluno_%d entrou na sala e esta estudando.\n", id);
         // se todos os alunos ja entraram ou se o limite de vagas foi atingido
