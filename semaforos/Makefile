@@ -1,5 +1,5 @@
 all:
-	gcc sim.c sim_utils.c -o sim -lpthread -lm
+	gcc *.c -o sim -lpthread -lm
 	./sim
 
 clean:
