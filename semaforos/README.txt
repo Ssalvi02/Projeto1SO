@@ -1,0 +1,1 @@
+Usar o comando 'make' para executar o código.

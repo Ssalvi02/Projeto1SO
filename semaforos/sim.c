@@ -1,3 +1,28 @@
+/****************************************************************************************************************************************************************************************************************
+Autores: 
+    Gabriela Paola Sereniski
+    João Victor Salvi Silva
+    Ingrid Reupke Sbeguen Moran
+
+Data: 28/04/2023
+
+Descrição:
+    Implementação do problema proposto pelo professor e específicado no projeto 1 utilizando semáforos.
+    
+•••• Alunos:    Podem tentar entrar na sala mas só podem entrar, de fato, se houver um monitor na sala.
+                Se a sala estiver aberta, o tempo limite não tiver esgotado ou o limite de vagas não atinjiu o máximo e houver pelo menos um monitor, o aluno pode entrar na sala.
+                Saem da sala ao terminar de estudar.
+    
+•••• Professor: Abre a sala para os monitores.
+                Alerta os monitores e alunos quando ele estiver pronto para fechar a sala, assim todos que estavam esperando vão embora.
+                Fecha a sala se ela estiver vazia (sem alunos e monitores).
+    
+•••• Monitor:   Supervisiona o estudo de um grupo de alunos.
+                Entra na sala se o professor já a tiver aberto.
+                Pode tentar sair da sala a qualquer momento, mas só pode sair se houver outro monitor na sala ou se o professor já tiver avisado que irá fechar a sala e ele for o último a sair.
+****************************************************************************************************************************************************************************************************************/
+
+
 #include "sim_utils.h" // Funções auxiliares/utilitárias
 #include <stdio.h>
 #include <stdlib.h>
